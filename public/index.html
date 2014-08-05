@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>fullstack</title>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
+</head>
+<body  ng-controller="MainController">
+<div class="jumbotron">
+	<h1>{{ test }}</h1>
+	<div>
+		<button class="btn btn-lg btn-info" ng-click="getThoseFriends()">Get Friends</button>
+		<button class="btn btn-lg btn-danger" ng-click="testy()">Get Family</button>
+		<button class="btn btn-lg btn-warning">Get Me</button>
+		<button class="btn btn-lg btn-success">Get Hobbies</button>
+	</div>
+</div>
+
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1>Input</h1>
+			</div>
+			<div class="panel-body">
+				<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Add Friends">
+				      <span class="input-group-btn">
+				        <button class="btn btn-primary" type="button" >Go!</button>
+				      </span>
+				</div>
+				<div class="input-group">
+				      <input type="text" class="form-control">
+				      <span class="input-group-btn">
+				        <button class="btn btn-primary" type="button">Go!</button>
+				      </span>
+				</div>
+				<div class="input-group">
+				      <input type="text" class="form-control">
+				      <span class="input-group-btn">
+				        <button class="btn btn-primary" type="button">Go!</button>
+				      </span>
+				</div>							
+			</div>		
+		</div>
+	</div>
+	
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/myController.js"></script>
+<script src="js/myDirectives.js"></script>
+<script src="js/myService.js"></script>
+</body>
+</html>
