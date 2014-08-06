@@ -1,15 +1,14 @@
 var app = angular.module('app');
 
-app.service("myService", function($http) {
+app.service("myService", function($http, $q) {
 
 	this.getFriends = function() {
-		console.log("Im in the service");
+		console.log("Console.log from the service");
+
+		// return the data
 		return $http({
 			method: 'GET',
 			url: 'http://localhost:9999/friends'
-		}).then(function(results) {
-			return results.data;
-			console.log(results);
 		});
 	}
 });
