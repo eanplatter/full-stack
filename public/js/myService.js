@@ -9,7 +9,7 @@ app.service("myService", function($http) {
 			url: 'http://localhost:9999/friends'
 		}).then(function(results) {
 			return results.data;
+			console.log(results);
 		});
 	}
-
 });
